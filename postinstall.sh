@@ -37,4 +37,4 @@ sudo pacman -U --noconfirm *pkg.tar.xz
 yaourt -S --noconfirm google-chrome-beta
 
 # other software
-pacman -S mpv clementine qemu ntfs-3g
+pacman -S --noconfirm mpv clementine qemu ntfs-3g
