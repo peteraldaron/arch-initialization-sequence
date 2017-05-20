@@ -16,11 +16,6 @@ cp .zshrc /home/$NAME/.zprezto/runcoms/zshrc
 # pg
 sudo pacman -S --noconfirm lua python3
 
-# vim
-bash <(curl -sL https://git.io/haskell-vim-now) --basic
-rm -f /home/$NAME/.config/haskell-vim-now/.vimrc
-cp ./vimrc /home/$NAME/.config/haskell-vim-now/.vimrc
-
 # yaourt
 cd /tmp
 sudo pacman -S --noconfirm yajl
@@ -30,11 +25,18 @@ makepkg
 sudo pacman -U --noconfirm *pkg.tar.xz
 cd ..
 git clone https://aur.archlinux.org/yaourt.git/
+cd yaourt
 makepkg
 sudo pacman -U --noconfirm *pkg.tar.xz
+
+# vim
+sudo yaourt -S --noconfirm ctags par
+bash <(curl -sL https://git.io/haskell-vim-now) --basic
+rm -f /home/$NAME/.config/haskell-vim-now/.vimrc
+cp ./vimrc /home/$NAME/.config/haskell-vim-now/.vimrc
 
 # chrome
 yaourt -S --noconfirm google-chrome-beta
 
 # other software
-pacman -S --noconfirm mpv clementine qemu ntfs-3g
+sudo pacman -S --noconfirm mpv clementine qemu ntfs-3g
