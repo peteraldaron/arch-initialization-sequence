@@ -26,3 +26,6 @@ ln -s /usr/share/zoneinfo/Europe/Helsinki /etc/localtime
 
 # systemctl
 systemctl enable ntpd NetworkManager
+
+# xconfig
+nvidia-xconfig

@@ -11,7 +11,7 @@ done
 
 sudo chsh -s /bin/zsh $NAME
 rm -f /home/$NAME/.zprezto/runcoms/zshrc
-cp .zshrc /home/$NAME/.zprezto/runcoms/zshrc
+cp zshrc /home/$NAME/.zprezto/runcoms/zshrc
 
 # pg
 sudo pacman -S --noconfirm lua python3
@@ -39,4 +39,4 @@ cp ./vimrc /home/$NAME/.config/haskell-vim-now/.vimrc
 yaourt -S --noconfirm google-chrome-beta
 
 # other software
-sudo pacman -S --noconfirm mpv clementine qemu ntfs-3g
+sudo pacman -S --noconfirm mpv clementine qemu ntfs-3g the_silver_searcher
