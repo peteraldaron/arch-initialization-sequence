@@ -9,6 +9,11 @@
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
   source "${ZDOTDIR:-$HOME}/.zprezto/modules/git/init.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/autosuggestions/init.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/python/init.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/pacman/init.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/completion/init.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/modules/node/init.zsh"
 fi
 
 # Customize to your needs...

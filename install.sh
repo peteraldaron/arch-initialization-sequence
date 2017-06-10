@@ -2,7 +2,7 @@
 
 pacstrap /mnt base base-devel gvim firefox wget git zsh xorg-server \
               nvidia net-tools inetutils networkmanager \
-              network-manager-applet nmon htop lxdm \
+              network-manager-applet nmon htop \
               openssh
 genfstab -U /mnt > /mnt/etc/fstab
 printf "en_US.UTF-8 UTF-8" >> /mnt/etc/locale.gen
