@@ -29,3 +29,4 @@ systemctl enable ntpd NetworkManager
 
 # xconfig
 nvidia-xconfig
+mkinitcpio -p linux
