@@ -14,7 +14,7 @@ echo $NAME" ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 # grub
 pacman -S --noconfirm grub os-prober efibootmgr
 mkdir -p /boot/efi
-mount -t vfat /dev/sda1 /boot/efi
+mount -t vfat /dev/sdz9 /boot/efi
 grub-install --target=x86_64-efi --efi-directory=/boot/efi \
              --bootloader-id=grub --debug --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
