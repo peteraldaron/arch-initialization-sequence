@@ -39,4 +39,7 @@ cp ./vimrc /home/$NAME/.config/haskell-vim-now/.vimrc
 yaourt -S --noconfirm google-chrome-beta
 
 # other software
-sudo pacman -S --noconfirm mpv clementine qemu ntfs-3g the_silver_searcher
+sudo pacman -S --noconfirm mpv clementine qemu ntfs-3g the_silver_searcher \
+                           tmux python python-pip vim-workspace vim-vcscommand \
+                           vim-jad vim-align jdk8-openjdk gvfs mate-terminal \
+                           imagemagick gdb clang lua wget yajl
