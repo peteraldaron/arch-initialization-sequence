@@ -30,7 +30,7 @@ makepkg
 sudo pacman -U --noconfirm *pkg.tar.xz
 
 # vim
-sudo yaourt -S --noconfirm ctags par
+yaourt -S --noconfirm ctags par
 bash <(curl -sL https://git.io/haskell-vim-now) --basic
 rm -f /home/$NAME/.config/haskell-vim-now/.vimrc
 cp ./vimrc /home/$NAME/.config/haskell-vim-now/.vimrc
